@@ -18,7 +18,7 @@
 //  di volta in volta all’utente la descrizione
 //   di ciascun studente, salviamola quindi all’interno
 //    della sua proprietà.
-
+var studentsResult = document.getElementById("studenti");
 var students =[
     {nome: "Carl", cognome: "Brave", age: "25", description: ""},
     {nome: "Franco", cognome: "Centoventisei", age: "27", description: ""},
@@ -32,3 +32,5 @@ for (var k in students){
 }
 
 console.log(students);
+
+studentsResult.innerHTML += "<li>" + students[k].nome + " " + students[k].cognome + " " + students[k].age + " " + students[k].description;
