@@ -25,12 +25,12 @@ var students =[
     {nome: "Flavio", cognome: "Pardini", age: "29", description: ""}
 ]
 console.log(students);
-
+for(x = 0; x < students.length; x++){
+    students[x].description = prompt("inserisci descrizione");
+}
 for (var k in students){
     console.log(k, students[k]);
-    students[k].description = prompt("inserisci descrizione");
+    studentsResult.innerHTML += "<li>" + students[k].nome + " " + students[k].cognome + " " + students[k].age + " " + students[k].description;
 }
-
 console.log(students);
 
-studentsResult.innerHTML += "<li>" + students[k].nome + " " + students[k].cognome + " " + students[k].age + " " + students[k].description;
